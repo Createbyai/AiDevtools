@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build output and cache
+dist/
+build/
+.cache/
+.history/
+
+# Chrome Extension specific
+*.crx
+*.pem
+*.zip 
+# Configuration files with sensitive data
+settings.json
+*.local.json
+.env
+.env.local
+.env.*.local

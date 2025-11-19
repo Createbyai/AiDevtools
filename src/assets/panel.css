@@ -1,0 +1,103 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f3f3f3;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.arco-layout-sider-children {
+  padding: 8px;
+  height: calc(100vh - 16px);
+}
+.arco-layout-content {
+  height: calc(100vh - 16px);
+}
+
+.arco-split-pane .section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.opt-bar,
+.ai-msg-header {
+  padding: 0 8px;
+  background: #fff;
+  height: 40px;
+  align-content: center;
+  margin-bottom: 8px;
+}
+
+.opt-btn {
+  text-align: right;
+}
+.opt-btn .arco-icon {
+  cursor: pointer;
+}
+.chat-input-container {
+  padding: 8px;
+  background: #fff;
+}
+
+.console-msg {
+  height: calc(100% - 8px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.console-msg :deep(.arco-list) {
+  flex: 1;
+  overflow: auto;
+  margin: 0;
+}
+
+.arco-list-item {
+  padding: 4px 8px !important;
+  background-color: var(--color-bg-white);
+}
+.arco-list-wrapper .arco-list-spin {
+  overflow-y: auto;
+  /* 自定义滚动条样式 */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-text-3) transparent;
+}
+
+/* 为左侧列表添加与stream-md-container相同的滚动条样式 */
+:deep(.arco-list-wrapper .arco-list-spin::-webkit-scrollbar) {
+  width: 6px;
+}
+
+:deep(.arco-list-wrapper .arco-list-spin::-webkit-scrollbar-track) {
+  background: transparent;
+}
+
+:deep(.arco-list-wrapper .arco-list-spin::-webkit-scrollbar-thumb) {
+  background-color: var(--color-text-3);
+  border-radius: 6px;
+}
+
+.ask-ai {
+  color: #fff;
+  background: radial-gradient(
+    495.98% 195.09% at 144.79% 10.71%,
+    #ff8a01 0,
+    #b051b9 22.37%,
+    #672bff 45.54%,
+    #06f 99.99%
+  );
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 14px;
+}

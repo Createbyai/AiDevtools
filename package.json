@@ -1,0 +1,25 @@
+{
+  "name": "aidevtools",
+  "private": true,
+  "version": "1.0.3",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "build:extension": "vite build && cd dist && zip -r chrome-devtools-extension.zip ."
+  },
+  "dependencies": {
+    "@vueuse/core": "^13.1.0",
+    "highlight.js": "^11.11.1",
+    "markdown-it": "^14.1.0",
+    "vite-plugin-remove-console": "^2.2.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.57.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "streaming-markdown": "^0.2.8",
+    "vite": "^6.3.2"
+  }
+}
